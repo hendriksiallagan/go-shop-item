@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.37)
 # Database: shop
-# Generation Time: 2019-02-04 10:24:37 +0000
+# Generation Time: 2019-02-05 16:12:39 +0000
 # ************************************************************
 
 
@@ -33,6 +33,17 @@ CREATE TABLE `item` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `item` WRITE;
+/*!40000 ALTER TABLE `item` DISABLE KEYS */;
+
+INSERT INTO `item` (`id`, `name`, `price`, `tax_code`)
+VALUES
+	(1,'Big Mac',1000,1),
+	(2,'Lucky Strecth',1000,2),
+	(3,'Movie',150,3);
+
+/*!40000 ALTER TABLE `item` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 

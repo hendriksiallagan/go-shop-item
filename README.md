@@ -1,26 +1,9 @@
-# go-clean-arch
+# go-shop-item
 
-## Looking for the old code ? 
-If you are looking for the old code, you can checkout to the [v1 branch](https://github.com/bxcodec/go-clean-arch/tree/v1)
-
-_Last Updated: May 12th 2018_
 
 ## Description
-This is an example of implementation of Clean Architecture in Go (Golang) projects.
+This is an example of implementation of Shop Item in Go (Golang) projects.
 
-Rule of Clean Architecture by Uncle Bob
- * Independent of Frameworks. The architecture does not depend on the existence of some library of feature laden software. This allows you to use such frameworks as tools, rather than having to cram your system into their limited constraints.
- * Testable. The business rules can be tested without the UI, Database, Web Server, or any other external element.
- * Independent of UI. The UI can change easily, without changing the rest of the system. A Web UI could be replaced with a console UI, for example, without changing the business rules.
- * Independent of Database. You can swap out Oracle or SQL Server, for Mongo, BigTable, CouchDB, or something else. Your business rules are not bound to the database.
- * Independent of any external agency. In fact your business rules simply don’t know anything at all about the outside world.
-
-
-This project has  4 Domain layer :
- * Models Layer
- * Repository Layer
- * Usecase Layer  
- * Delivery Layer
 
 
 ### How To Run This Project
@@ -28,13 +11,13 @@ This project has  4 Domain layer :
 
 ```bash
 #move to directory
-cd $GOPATH/src/github.com/bxcodec
+cd $GOPATH/src/github.com
 
 # Clone into YOUR $GOPATH/src
-git clone https://github.com/bxcodec/go-clean-arch.git
+git clone https://github.com/hendriksiallagan/go-shop-item.git
 
 #move to project
-cd go-clean-arch
+cd go-shop-item
 
 # Install Dependencies
 dep ensure
@@ -51,11 +34,11 @@ Or With `go get`
 
 ```bash
 # GET WITH GO GET
-go get github.com/bxcodec/go-clean-arch
+go get github.com/hendriksiallagan/go-shop-item.git
 
 # Go to directory
 
-cd $GOPATH/src/github.com/bxcodec/go-clean-arch
+cd $GOPATH/src/github.com/go-shop-item
 
 # Install Dependencies
 dep ensure
@@ -71,13 +54,13 @@ Or with `docker-compose`
 
 ```bash
 #move to directory
-cd $GOPATH/src/github.com/bxcodec
+cd $GOPATH/src/github.com
 
 # Clone into YOUR $GOPATH/src
-git clone https://github.com/bxcodec/go-clean-arch.git
+git clone https://github.com/hendriksiallagan/go-shop-item.git
 
 #move to project
-cd go-clean-arch
+cd go-shop-item
 
 # Build the docker image first
 make docker
@@ -89,20 +72,17 @@ make run
 docker ps
 
 # Execute the call
-curl localhost:9090/articles
+curl localhost:9090/items
 
 # Stop
 make stop
 ```
 
 
-### Tools Used:
-In this project, I use some tools listed below. But you can use any simmilar library that have the same purposes. But, well, different library will have different implementation type. Just be creative and use anything that you really need. 
+### Notes:
+In this project, you can access some links :
 
-- All libraries listed in [`Gopkg.toml`](https://github.com/bxcodec/go-clean-arch/blob/master/Gopkg.toml) 
-- ["github.com/vektra/mockery".](https://github.com/vektra/mockery) To Generate Mocks for testing needs.
+- [GET] /items -> to display a list data of items
+- [GET] /calculate -> to display how much price subtotal, tax subtotal & grand total
+- [POST] /items -> to insert data item : name, price, taxcode to database
 
-
-### Change log 
- - 2018-04-30 : [Move to new projects folder](https://github.com/bxcodec/go-clean-arch/pull/8)
- - 2018-05-09 : [Add Context](https://github.com/bxcodec/go-clean-arch/pull/9)

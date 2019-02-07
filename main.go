@@ -12,7 +12,7 @@ import (
 	_itemRepo "github.com/go-shop-item/item/repository"
 	_itemUcase "github.com/go-shop-item/item/usecase"
 
-	"github.com/bxcodec/go-clean-arch/middleware"
+	"github.com/go-shop-item/middleware"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/labstack/echo"
 	"github.com/spf13/viper"

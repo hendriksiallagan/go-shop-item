@@ -1,7 +1,7 @@
 {
   "debug": true,
   "server": {
-    "address": ":9080"
+    "address": ":9070"
   },
   "context":{
     "timeout":2

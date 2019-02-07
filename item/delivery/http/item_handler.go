@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/shop/models"
+	"github.com/go-shop-item/models"
 	"github.com/sirupsen/logrus"
 
 	"github.com/labstack/echo"
-	"github.com/shop/item"
+	"github.com/go-shop-item/item"
 
 	"gopkg.in/go-playground/validator.v9"
 )

@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shop/item/mocks"
-	ucase "github.com/shop/item/usecase"
-	"github.com/shop/models"
+	"github.com/go-shop-item/item/mocks"
+	ucase "github.com/go-shop-item/item/usecase"
+	"github.com/go-shop-item/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	itemRepo "github.com/shop/item/repository"
-	"github.com/shop/models"
+	itemRepo "github.com/go-shop-item/item/repository"
+	"github.com/go-shop-item/models"
 	"github.com/stretchr/testify/assert"
 	sqlmock "gopkg.in/DATA-DOG/go-sqlmock.v1"
 )

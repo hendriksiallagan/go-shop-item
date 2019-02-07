@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"github.com/sirupsen/logrus"
 
-	"github.com/shop/item"
-	"github.com/shop/models"
+	"github.com/go-shop-item/item"
+	"github.com/go-shop-item/models"
 )
 
 const (

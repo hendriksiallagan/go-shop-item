@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	_itemHttpDeliver "github.com/shop/item/delivery/http"
-	_itemRepo "github.com/shop/item/repository"
-	_itemUcase "github.com/shop/item/usecase"
+	_itemHttpDeliver "github.com/go-shop-item/item/delivery/http"
+	_itemRepo "github.com/go-shop-item/item/repository"
+	_itemUcase "github.com/go-shop-item/item/usecase"
 
 	"github.com/bxcodec/go-clean-arch/middleware"
 	_ "github.com/go-sql-driver/mysql"

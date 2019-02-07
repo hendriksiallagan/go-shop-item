@@ -2,7 +2,7 @@ package item
 
 import (
 	"context"
-	"github.com/shop/models"
+	"github.com/go-shop-item/models"
 )
 
 // Repository represent the item's repository contract

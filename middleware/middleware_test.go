@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/shop/middleware"
+	"github.com/go-shop-item/middleware"
 	"github.com/labstack/echo"
 
 	test "net/http/httptest"

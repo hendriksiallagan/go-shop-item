@@ -10,9 +10,9 @@ import (
 	//"time"
 
 	"github.com/labstack/echo"
-	itemHttp "github.com/shop/item/delivery/http"
-	"github.com/shop/item/mocks"
-	"github.com/shop/models"
+	itemHttp "github.com/go-shop-item/item/delivery/http"
+	"github.com/go-shop-item/item/mocks"
+	"github.com/go-shop-item/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
